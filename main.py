@@ -1,5 +1,10 @@
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
 def main():
-    print("Hello from my-project!")
+    return "Hello from FastAPI!"
 
 
 if __name__ == "__main__":
